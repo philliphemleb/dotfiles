@@ -1,0 +1,4 @@
+#!/bin/bash
+{{ if eq .chezmoi.os "darwin" -}}
+brew bundle --file="$HOME/.local/share/chezmoi/Brewfile"
+{{ end -}}

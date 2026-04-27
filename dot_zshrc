@@ -1,0 +1,27 @@
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="robbyrussell"
+
+plugins=(
+  git
+  docker
+  docker-compose
+  brew
+  node
+  php
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Ghostty integration, only if available
+if [[ -n "$GHOSTTY_RESOURCES_DIR" && -f "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration" ]]; then
+  autoload -Uz -- "$GHOSTTY_RESOURCES_DIR/shell-integration/zsh/ghostty-integration"
+  ghostty-integration
+fi
+
+alias ll="ls -la"
+alias gs="git status"
+
+mvp() {
+  mkdir -p "$(dirname "$2")" && mv "$@"
+}
