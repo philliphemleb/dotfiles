@@ -8,7 +8,6 @@ plugins=(
   docker-compose
   brew
   node
-  php
 )
 
 source $ZSH/oh-my-zsh.sh
