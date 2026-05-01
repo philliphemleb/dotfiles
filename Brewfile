@@ -20,3 +20,5 @@ cask "raycast"
 cask "redis-insight"
 cask "zen"
 cask "bruno"
+
+cask "discord"
