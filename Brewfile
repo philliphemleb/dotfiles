@@ -13,6 +13,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "opencode"
 
+brew "oven-sh/bun/bun"
+
 cask "raycast"
 cask "zen"
 cask "helium-browser"
